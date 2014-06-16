@@ -17,4 +17,9 @@ $analyzer = new Analyzer($parser);
 $onlyRealCustomers = $analyzer->filterBots($data);
 $orderByPage = $analyzer->orderByPage($onlyRealCustomers);
 
+$staticsForDevices = $analyzer->deviceStatics($onlyRealCustomers);
+$countryStatistics = $analyzer->countryStatistics($onlyRealCustomers, true);
+
 print_r($orderByPage);
+print_r($staticsForDevices);
+print_r($countryStatistics);

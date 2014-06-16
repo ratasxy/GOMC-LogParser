@@ -11,7 +11,7 @@ class Parser{
     {
         $this->regEx = '/^(\S+) \S+ \S+ \[([^\]]+)\] "([A-Z]+) (\S+)[^"]*" (\d+) \d+ "[^"]*" "([^"]*)"$/m';
         $this->regExDetectBot = '/Googlebot|DotBot|Baiduspider|AhrefsBot|bingbot|msnbot-media|SEOstats|facebookexternalhit|YandexBot|RU_Bot|NerdyBot/';
-        $this->regExDetectMovil = "/Android|iPhone|iPad|BlackBerry/";
+        $this->regExDetectMobile = "/Android|iPhone|iPad|BlackBerry/";
         $this->regExDetectCSSorJSorImage = "/\.css|\.js|\.jpg|\.png|\.svg|\.ttf|\.eot|\.woff|\.gif|robots\.txt/i";
         $this->regExPageNumber = "/\?page=.*/i";
     }
